@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precios - WebSpark</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Grid Background -->
+    <div class="grid-background"></div>
+    <div class="animated-particles"></div>
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="index.html" class="nav-link">INICIO</a>
+                <a href="servicios.html" class="nav-link">SERVICIOS</a>
+                <a href="conocenos.html" class="nav-link">CONÓCENOS</a>
+            </div>
+            <div class="nav-center">
+                <a href="index.html" class="logo-link">
+                    <img src="webspark.png" alt="WebSpark Logo" class="logo-image">
+                </a>
+            </div>
+            <div class="nav-right">
+                <a href="portafolio.html" class="nav-link">PORTAFOLIO</a>
+                <a href="precios.html" class="nav-link active">PRECIOS</a>
+                <a href="cotizacion.html" class="nav-link">COTIZACIÓN</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Container -->
+    <div class="page-container">
+        <!-- Precios Page -->
+        <div id="page-precios" class="page active">
+            <section class="prices-section">
+                <!-- Video Background -->
+                <video autoplay muted loop playsinline class="hero-video">
+                    <source src="Generando_video_a_x.mp4" type="video/mp4">
+                </video>
+                <div class="hero-overlay-pricing"></div>
+
+                <div class="container pricing-container">
+                    <div class="pricing-header">
+                        <span class="hero-subtitle">INVERSIÓN INTELIGENTE</span>
+                        <h2 class="section-title text-center">PLANES <span class="text-gradient">TRANSPARENTES</span>
+                        </h2>
+                        <p class="pricing-subtitle">Sin costos ocultos. Elige el paquete que potenciará tu negocio.</p>
+                    </div>
+
+                    <div class="prices-grid-premium">
+                        <!-- Basic Plan -->
+                        <div class="price-card-glass">
+                            <div class="card-glow-border"></div>
+                            <h3 class="price-title">Emprendedor</h3>
+                            <div class="price-amount">
+                                <span class="currency">S/</span>
+                                <span class="amount">950</span>
+                                <span class="period">/único</span>
+                            </div>
+                            <p class="price-desc">Ideal para iniciar tu presencia digital con estilo.</p>
+                            <ul class="price-features-premium">
+                                <li><span class="check">✓</span> Landing Page (1 Página)</li>
+                                <li><span class="check">✓</span> Diseño Moderno & Responsivo</li>
+                                <li><span class="check">✓</span> Formulario de Contacto</li>
+                                <li><span class="check">✓</span> Botón de WhatsApp</li>
+                                <li><span class="check">✓</span> Hosting Gratuito 1 año</li>
+                            </ul>
+                            <button class="cta-btn-premium"
+                                onclick="window.open('https://wa.me/51971471039?text=Hola%20me%20interesa%20el%20plan%20Emprendedor', '_blank')">Elegir
+                                Plan</button>
+                        </div>
+
+                        <!-- Pro Plan (Featured) -->
+                        <div class="price-card-glass featured-glass">
+                            <div class="popular-tag">MÁS VENDIDO</div>
+                            <div class="card-glow-border"></div>
+                            <h3 class="price-title">Negocio Pro</h3>
+                            <div class="price-amount">
+                                <span class="currency">S/</span>
+                                <span class="amount">1,800</span>
+                                <span class="period">/único</span>
+                            </div>
+                            <p class="price-desc">Sitio web completo para empresas en crecimiento.</p>
+                            <ul class="price-features-premium">
+                                <li><span class="check">✓</span> Web Corporativa (hasta 6 seg)</li>
+                                <li><span class="check">✓</span> <strong>Diseño Premium UI/UX</strong></li>
+                                <li><span class="check">✓</span> Blog / Noticias</li>
+                                <li><span class="check">✓</span> Optimización SEO Básica</li>
+                                <li><span class="check">✓</span> Integración Redes Sociales</li>
+                                <li><span class="check">✓</span> Panel Autoadministrable</li>
+                            </ul>
+                            <button class="cta-btn-premium featured-btn"
+                                onclick="window.open('https://wa.me/51971471039?text=Hola%20me%20interesa%20el%20plan%20Negocio%20Pro', '_blank')">Elegir
+                                Plan</button>
+                        </div>
+
+                        <!-- Enterprise Plan -->
+                        <div class="price-card-glass">
+                            <div class="card-glow-border"></div>
+                            <h3 class="price-title">E-commerce / App</h3>
+                            <div class="price-amount">
+                                <span class="currency">S/</span>
+                                <span class="amount">3,500+</span>
+                            </div>
+                            <p class="price-desc">Tiendas online y sistemas a medida de alto impacto.</p>
+                            <ul class="price-features-premium">
+                                <li><span class="check">✓</span> Tienda Online Completa</li>
+                                <li><span class="check">✓</span> Pasarela de Pagos (Visa/Master)</li>
+                                <li><span class="check">✓</span> Gestión de Inventario</li>
+                                <li><span class="check">✓</span> Cuentas de Usuario</li>
+                                <li><span class="check">✓</span> Desarrollo Personalizado</li>
+                                <li><span class="check">✓</span> Soporte Prioritario 24/7</li>
+                            </ul>
+                            <button class="cta-btn-premium"
+                                onclick="window.open('https://wa.me/51971471039?text=Hola%20quiero%20cotizar%20un%20proyecto%20a%20medida', '_blank')">Cotizar
+                                Ahora</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Chat Widget -->
+    <div class="chat-widget" id="chatWidget">
+        <div class="chat-icon">💬</div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

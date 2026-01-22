@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSpark - Desarrollo Web y Software a Medida</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Grid Background -->
+    <div class="grid-background"></div>
+    <div class="icon-rain-container" id="iconRainContainer"></div>
+    <div class="animated-particles"></div>
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="index.html" class="nav-link active">INICIO</a>
+                <a href="servicios.html" class="nav-link">SERVICIOS</a>
+                <a href="conocenos.html" class="nav-link">CONÓCENOS</a>
+            </div>
+            <div class="nav-center">
+                <a href="index.html" class="logo-link">
+                    <img src="webspark.png" alt="WebSpark Logo" class="logo-image">
+                </a>
+            </div>
+            <div class="nav-right">
+                <a href="portafolio.html" class="nav-link">PORTAFOLIO</a>
+                <a href="precios.html" class="nav-link">PRECIOS</a>
+                <a href="cotizacion.html" class="nav-link">COTIZACIÓN</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Container -->
+    <div class="page-container">
+        <!-- Inicio Page -->
+        <div id="page-inicio" class="page active">
+            <section class="hero-section">
+                <div class="carousel-3d-container">
+                    <div class="carousel-3d" id="carousel3d">
+                        <!-- Project items will be dynamically inserted here -->
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-btn prev-btn" id="prevBtn">← Anterior</button>
+                    <button class="carousel-btn next-btn" id="nextBtn">Siguiente →</button>
+                </div>
+                <div class="carousel-indicators" id="carouselIndicators"></div>
+                <div class="section-label">
+                    <div class="label-line"></div>
+                    <span>PROYECTOS PROFESIONALES</span>
+                    <div class="label-line"></div>
+                </div>
+            </section>
+
+            <!-- Hero CTA Section -->
+            <section class="hero-cta-section">
+                <div class="cta-background-glow"></div>
+                <div class="container">
+                    <h1 class="hero-cta-title">
+                        EL FUTURO<br>
+                        DE TU<br>
+                        <span class="text-gradient-main">SOFTWARE</span><br>
+                        EMPIEZA AQUÍ
+                    </h1>
+                    <div class="hero-cta-buttons">
+                        <button class="cta-btn cta-quote" onclick="window.location.href='cotizacion.html'">
+                            <span class="cta-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M12 5v14M5 12h14" />
+                                </svg>
+                            </span>
+                            COTIZAR MI WEB
+                        </button>
+                        <button class="cta-btn cta-contact"
+                            onclick="window.open('https://wa.me/51971471039?text=Hola%20quiero%20mas%20informacion', '_blank')">
+                            <span class="cta-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                                </svg>
+                            </span>
+                            CONTACTO
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Stats Section -->
+            <section class="stats-hero-section">
+                <div class="container">
+                    <h2 class="stats-hero-title">Únete a miles de emprendedores <br>que gestionan sus negocios en <span
+                            class="highlight">WEBSPARK</span></h2>
+                    <div class="stats-cards">
+                        <div class="stat-card glass-card">
+                            <div class="stat-icon-bg">👥</div>
+                            <div class="stat-number-large" data-target="15">+15</div>
+                            <div class="stat-label-large">Clientes Satisfechos</div>
+                        </div>
+                        <div class="stat-card glass-card">
+                            <div class="stat-icon-bg">🚀</div>
+                            <div class="stat-number-large" data-target="50">+50</div>
+                            <div class="stat-label-large">Proyectos Completados</div>
+                        </div>
+                        <div class="stat-card glass-card">
+                            <div class="stat-icon-bg">⭐</div>
+                            <div class="stat-number-large" data-target="100">100%</div>
+                            <div class="stat-label-large">Satisfacción Garantizada</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Technologies Section -->
+            <section class="technologies-section">
+                <div class="section-glow"></div>
+                <div class="container">
+                    <h2 class="tech-title">Technology Stack</h2>
+                    <p class="tech-subtitle">Creamos páginas web con tecnologías modernas y profesionales.</p>
+                    <div class="tech-grid">
+                        <div class="tech-item floating t1">
+                            <div class="tech-icon"><img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg"
+                                    alt="Android"></div>
+                            <div class="tech-name">ANDROID</div>
+                        </div>
+                        <div class="tech-item floating t1">
+                            <div class="tech-icon"><img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg"
+                                    alt="iOS"></div>
+                            <div class="tech-name">IOS</div>
+                        </div>
+                        <div class="tech-item floating t2">
+                            <div class="tech-icon"><img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                                    alt="HTML"></div>
+                            <div class="tech-name">HTML</div>
+                        </div>
+                        <div class="tech-item floating t3">
+                            <div class="tech-icon"><img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                                    alt="CSS"></div>
+                            <div class="tech-name">CSS</div>
+                        </div>
+                        <div class="tech-item floating t4">
+                            <div class="tech-icon"><img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                                    alt="JS"></div>
+                            <div class="tech-name">JAVASCRIPT</div>
+                        </div>
+                        <div class="tech-item floating t5">
+                            <div class="tech-icon"><img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                                    alt="Figma"></div>
+                            <div class="tech-name">FIGMA</div>
+                        </div>
+                        <div class="tech-item floating t2">
+                            <div class="tech-icon"><img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                                    alt="React"></div>
+                            <div class="tech-name">REACT</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Reviews Section -->
+            <section class="reviews-section">
+                <div class="container">
+                    <h2 class="reviews-title">LO QUE DICEN NUESTROS CLIENTES</h2>
+                    <div class="reviews-grid">
+                        <div class="review-card glass-card">
+                            <div class="review-header">
+                                <div class="review-avatar">CM</div>
+                                <div class="review-info">
+                                    <span class="r-name">Miguel J.</span>
+                                    <span class="r-role">Director, Tradiciones</span>
+                                </div>
+                            </div>
+                            <div class="review-stars">★★★★★</div>
+                            <p class="review-text">"El diseño de nuestra página web corporativa elevó totalmente la
+                                percepción de la empresa. Profesional y estratégica."</p>
+                        </div>
+                        <div class="review-card glass-card">
+                            <div class="review-header">
+                                <div class="review-avatar">AR</div>
+                                <div class="review-info">
+                                    <span class="r-name">Andrea R.</span>
+                                    <span class="r-role">Founder, BrandProps</span>
+                                </div>
+                            </div>
+                            <div class="review-stars">★★★★★</div>
+                            <p class="review-text">"Mi página web de marca personal ahora transmite autoridad y
+                                confianza real. Se siente premium."</p>
+                        </div>
+                        <div class="review-card glass-card">
+                            <div class="review-header">
+                                <div class="review-avatar">JL</div>
+                                <div class="review-info">
+                                    <span class="r-name">Javier L.</span>
+                                    <span class="r-role">E-commerce Owner</span>
+                                </div>
+                            </div>
+                            <div class="review-stars">★★★★★</div>
+                            <p class="review-text">"Nuestra tienda online profesional quedó moderna, rápida y lista para
+                                escalar."</p>
+                        </div>
+                        <div class="review-card glass-card">
+                            <div class="review-header">
+                                <div class="review-avatar">MS</div>
+                                <div class="review-info">
+                                    <span class="r-name">Mariana S.</span>
+                                    <span class="r-role">Marketing Director</span>
+                                </div>
+                            </div>
+                            <div class="review-stars">★★★★★</div>
+                            <p class="review-text">"El diseño web estratégico cambió por completo la imagen de nuestra
+                                marca. Resultados increíbles."</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Chat Widget -->
+    <div class="chat-widget" id="chatWidget">
+        <div class="chat-icon">💬</div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

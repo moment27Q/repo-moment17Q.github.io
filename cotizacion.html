@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotización - WebSpark</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Grid Background -->
+    <div class="grid-background"></div>
+    <div class="animated-particles"></div>
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="index.html" class="nav-link">INICIO</a>
+                <a href="servicios.html" class="nav-link">SERVICIOS</a>
+                <a href="conocenos.html" class="nav-link">CONÓCENOS</a>
+            </div>
+            <div class="nav-center">
+                <a href="index.html" class="logo-link">
+                    <img src="webspark.png" alt="WebSpark Logo" class="logo-image">
+                </a>
+            </div>
+            <div class="nav-right">
+                <a href="portafolio.html" class="nav-link">PORTAFOLIO</a>
+                <a href="precios.html" class="nav-link">PRECIOS</a>
+                <a href="cotizacion.html" class="nav-link active">COTIZACIÓN</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Container -->
+    <div class="page-container">
+        <!-- Cotización Page -->
+        <div id="page-cotizacion" class="page active">
+            <section class="quote-section">
+                <div class="container">
+                    <div class="quote-header">
+                        <h2 class="quote-title">Cuéntanos tu proyecto</h2>
+                        <p class="quote-subtitle">
+                            La información que compartas nos ayudará a analizar la complejidad de tu proyecto
+                            para darte una cotización precisa, justa y personalizada.
+                        </p>
+                    </div>
+                    <form class="quote-form" id="quoteForm">
+                        <div class="form-row single">
+                            <input type="text" class="form-input" placeholder="Nombre completo" required>
+                        </div>
+
+                        <div class="form-row single">
+                            <input type="tel" class="form-input" placeholder="Pon tu número de celular" required>
+                        </div>
+
+                        <div class="form-row single">
+                            <select class="form-select" required>
+                                <option value="">Tiempo estimado de entrega</option>
+                                <option value="1-2">1-2 semanas</option>
+                                <option value="2-4">2-4 semanas</option>
+                                <option value="1-2meses">1-2 meses</option>
+                                <option value="2-3meses">2-3 meses</option>
+                                <option value="3+">Más de 3 meses</option>
+                            </select>
+                        </div>
+
+                        <div class="form-row single">
+                            <select class="form-select" required>
+                                <option value="">Tipo de servicio web</option>
+                                <option value="pagina-web">Página Web</option>
+                                <option value="ecommerce">E-commerce</option>
+                                <option value="software-medida">Software a Medida</option>
+                                <option value="app-movil">Aplicación Móvil</option>
+                                <option value="landing-page">Landing Page</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+
+                        <div class="style-selection">
+                            <label class="style-label">Estilo de diseño:</label>
+                            <div class="style-buttons">
+                                <button type="button" class="style-btn active" data-style="moderno">Moderno</button>
+                                <button type="button" class="style-btn" data-style="minimalista">Minimalista</button>
+                                <button type="button" class="style-btn" data-style="futurista">Futurista</button>
+                                <button type="button" class="style-btn" data-style="premium">Premium
+                                    corporativo</button>
+                                <button type="button" class="style-btn" data-style="experimental">Experimental</button>
+                            </div>
+                        </div>
+
+                        <div class="form-row single">
+                            <select class="form-select" required>
+                                <option value="">Nivel del proyecto</option>
+                                <option value="basico">Básico</option>
+                                <option value="intermedio">Intermedio</option>
+                                <option value="avanzado">Avanzado</option>
+                                <option value="enterprise">Enterprise</option>
+                            </select>
+                        </div>
+
+                        <div class="budget-section">
+                            <label class="budget-label">Presupuesto aproximado</label>
+                            <div class="slider-container">
+                                <input type="range" class="budget-slider" id="budgetSlider" min="500" max="50000"
+                                    step="500" value="2000">
+                                <div class="slider-value">
+                                    <span class="currency-symbol">S/</span>
+                                    <span id="budgetValue">2,000</span>
+                                    <span class="currency-text">PEN</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-textarea">
+                            <textarea class="form-textarea-input"
+                                placeholder="Cuéntanos más detalles sobre tu proyecto, objetivos, funcionalidades específicas, referencias, etc."
+                                rows="6" required></textarea>
+                        </div>
+
+                        <button type="submit" class="quote-submit-btn">COTIZAR MI WEB</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Chat Widget -->
+    <div class="chat-widget" id="chatWidget">
+        <div class="chat-icon">💬</div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
