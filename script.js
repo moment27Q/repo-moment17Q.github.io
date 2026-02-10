@@ -82,6 +82,27 @@ const portfolioItems = [
         description: "Portal cultural con diseño temático y experiencia de usuario fluida.",
         category: "web",
         image: "paginasservicios/tradiiones.png"
+    },
+    {
+        id: 7,
+        title: "JJ Construcción",
+        description: "Materiales de calidad, herramientas profesionales y los mejores precios para hacer realidad tus proyectos.",
+        category: "web",
+        image: "paginasservicios/jjconstruccion.png"
+    },
+    {
+        id: 8,
+        title: "Chiru",
+        description: "Aplicaciones móviles Android y iOS",
+        category: "mobile",
+        image: "paginasservicios/chiru.jpeg"
+    },
+    {
+        id: 9,
+        title: "Style",
+        description: "Diseño y estilo para tu web.",
+        category: "web",
+        image: "paginasservicios/style.png"
     }
 ];
 
@@ -646,9 +667,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Click to select a plan
     pricingCards.forEach(card => {
         card.style.cursor = 'pointer';
-        
+
         // Click handler - select the plan (only on card, not on button)
-        card.addEventListener('click', function(e) {
+        card.addEventListener('click', function (e) {
             // Don't trigger if clicking the button - let button handle its own click
             if (e.target.closest('.cta-btn-premium')) {
                 return; // Let the button's onclick handle it
